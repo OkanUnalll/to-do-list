@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 70%;
+
+    margin: 2rem auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .app__head{
+        width: 100%;
+
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .header__head{
+            width: 100%;
+            height: 410px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+            border-radius: 15px 15px 0 0;
+
+            position: relative;
+        }
+
+        .header__head::before{
+            content: '';
+
+            width: 100%;
+            height: 50%;
+
+            position: absolute;
+            bottom: 0;
+
+            background: linear-gradient(to top, rgba(0,0,0, 1), rgba(0,0,0, 0) );
+        }
+
+            .header__head img{
+                width: 100%;
+            }
+
+            .header__head h1{
+                position: absolute;
+                left: 35px;
+                bottom: 35px;
+
+                font-size: 45px;
+                color: #fff;
+            }
+
+        .header__body{
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            box-shadow: 5px 5px 15px rgba(0,0,0, .18);
+
+            border-radius: 0 0 15px 15px;
+
+            background-color: #ECECEC;
+        }
+
+        .header__body-add-item-area, .header__body-title{
+            padding: 2rem 4rem;
+        }
+
+            .header__body-title{
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+
+                text-align: left;
+
+                border-bottom-style: solid;
+                border-bottom-width: .5px;
+                border-bottom-color: #B4B4B4;
+            }
+
+                .header__body-title h3{
+                    font-size: 35px;
+                    font-weight: 400;
+                }
+
+            .header__body-add-item-area{
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .add-text-area{
+                    width: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                    .add-text-to-list{
+                        width: 96%;
+                        height: 35px;
+
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #BFBFBF;
+
+                        outline-width: 2px;
+                        outline-color: #4ECE68;
+
+                        padding: 0 .5rem;
+                    }
+
+                    .add-button{
+                        width: 35px;
+                        height: 35px;
+
+                        border-radius: 5px;
+                        border: none;
+
+                        background-color: #4ECE68;
+
+                        transition: all .3s ease;
+                    }
+
+                    .add-button:hover{
+                        background-color: #54e671;
+                    }
+
+                    .add-button:active{
+                        background-color: #41ae57;
+                    }
+
+                        .add-button .uil-plus-circle{
+                            font-size: 22px;
+
+                            color: #fff;
+                        }
+
+    .app__body{
+        width: 100%;
+
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .body__title{
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: #B4B4B4;
+
+            padding: 2rem 0 .5rem 0;
+        }
+
+            .body__title h3{
+                font-size: 20px;
+
+                color: #B9B9B9;
+            }
+
+            .delete-all{
+                background-color: #CE4E4E;
+
+                padding: .5rem .7rem;
+
+                border: none;
+                border-radius: 5px;
+
+                color: #fff;
+            }
+
+            .delete-all:hover{
+                background-color: #e45757;
+            }
+
+            .delete-all:active{
+                background-color: #b74646;
+            }
+
+        .body__content{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+
+            padding: 1.5rem 0;
+        }
+
+            .to-do-item{
+                width: 100%;
+
+                margin-bottom: .5rem;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                box-shadow: 5px 5px 15px rgba(0,0,0, .18);
+            }
+
+                .to-do-item__text{
+                    width: 93%;
+
+                    display: flex;
+                    align-items: center;
+
+                    padding: .5rem;
+
+                    border-radius: 5px;
+                }
+
+                .delete-btn-single{
+                    width: 35px;
+                    height: 100%;
+
+                    padding: .5rem 0;
+
+                    border-radius: 0 5px 5px 0;
+                    border: none;
+
+                    background-color: #CE4E4E;
+
+                    transition: all .3s ease;
+                }
+
+                .delete-btn-single:hover{
+                    background-color: #e45757;
+                }
+
+                .delete-btn-single:active{
+                    background-color: #b74646;
+                }
+
+                    .delete-icon{
+                        color: #fff;
+
+                        font-size: 25px;
+                    }
